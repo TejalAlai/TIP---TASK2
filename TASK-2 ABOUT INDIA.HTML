@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>India</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>History</li>
+      <li>Culture</li>
+      <li>Clothing</li>
+      <li>Education</li>
+      <li>Society</li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1 style="text-align:center">About</h1>
+    <p>India, officially the Republic of India (Hindi: Bharat Ganarajya), is a country in South Asia. 
+                     It is the Second-most populous country, the seventh largest country by land area, and the most populous democracy in the world.
+                     Bounded by the Indian Ocean on the south, the Arabian Sea on the southwest , and the Bay of Bengal on the southest, it shares land borders
+                     with Pakistan to the west; China, Nepal, and Bhutan to the north; and Bangladesh and Myanmar to the east. In the Indian Ocean, India is the
+                     vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand, Myanmar and Indonesia.</p>
+
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2 style="text-align: center">Tourist Attractions</h2>
+      <ul style="list-style-type:circle;">
+     <li>The Tajmahal, Agra</li>
+     <li>The Holy City of Varanasi</li>
+     <li>Harmandir Sahib: The Golden Temple of Amritsar</li>
+     <li>The Golden City Jaisalmer</li>
+     <li>The Red Fort, New Delhi</li>
+     <li>Mumbai, The Gateway of India</li>
+     <li>Mecca Masjid, Hyderabad</li>
+     <li>Amer Fort, Jaipur</li>
+
+     </ul>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
